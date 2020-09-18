@@ -75,6 +75,10 @@ main {
   padding: 1% 0 1% 2%;
 }
 
+.mobile {
+  display: none;
+}
+
 .flexbox {
   position: relative;
   display: -webkit-box;
@@ -136,59 +140,49 @@ main {
   padding: 2%;
 }
 
-.flexbox-two {
-  position: relative;
+.container{
+  display:flex;
   width: 100%;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.flexbox2 {
+  width: 70%;
+  flex-wrap: wrap;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.inside-box {
-  display: flexbox;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 2%;
+}
+.flexbox2 img{
+  width: 40%;
+  padding-top: 2%;
+  margin-left: 5%;
 }
 
-.inside-box > img {
-  width: 43%;
-  padding: 0 2% 0 2%;
+.text4{
+display:none;
+}
+.text5{
+  display:none;
+}
+.text6{
+  display:none;
+}
+.text7{
+  display:none;
 }
 
-.text4 {
-  display: none;
-  margin-left: 2%;
-  width: 43%;
-  height: 10%;
-  bottom: 10%;
-  background-color: black;
-  color: white;
-  position: relative;
-}
 
-.text5 {
-  background-color: black;
-  color: white;
-  position: absolute;
-  display: none;
-}
 
-.text6 {
-  background-color: black;
-  color: white;
-  position: absolute;
-  display: none;
-}
 
-.text7 {
-  background-color: black;
-  color: white;
-  position: absolute;
-  display: none;
-}
+
+
 
 footer {
   background-color: black;
@@ -227,3 +221,76 @@ footer h2 {
   padding-bottom: 2%;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 480px) {
+
+  body{
+    width: 100%;
+  }
+
+  #title{
+    padding: 5%;
+    width: 30%
+  }
+
+  #banner-1{
+    display: none;
+  }
+
+  nav a{
+    font-size: 0.8em;
+  }
+  nav li{
+    padding:3%;
+  }
+  nav ul{
+    justify-content: center;
+  }
+  #date{
+    display:none;
+  }
+  .header{
+    margin-top: 3%;
+  }
+
+  .flexbox{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .mobile{
+    display: block
+  }
+
+  .flexbox img {
+    padding: 2%;
+    max-width: 40%;
+  }
+
+  .flexbox p{
+    font-size: 0.7em;
+  }
+.text1{
+  height: 15%;
+  width: 40%;
+  bottom: 55%;
+  left: 5%;
+}
+.text2{
+  height: 15%;
+  width: 40%;
+  bottom: 55%;
+  left: 55%;
+}
+.text3{
+  height: 15%;
+  width: 40%;
+  left: 5%;
+  bottom: 3%;
+}
+#banner-3{
+  display:none;
+}
+#banner-4{
+  display: none;
+}
+}
